@@ -5,6 +5,13 @@ $('#search-button').on('click', function(event) {
 		.val()
 		.trim();
 
+$('#search-button').on('click', function(event) {
+	event.preventDefault();
+	//pull value off of search box
+	var searchValue = $('#search-term')
+		.val()
+		.trim();
+
 	console.log(searchValue);
 	//build queryURL for youTUbe with value pulled off search box
 	let youTubeURL =
