@@ -1,3 +1,9 @@
+$('#search-button').on('click', function(event) {
+	event.preventDefault();
+	//pull value off of search box
+	var searchValue = $('#search-term')
+		.val()
+		.trim();
 
 $('#search-button').on('click', function(event) {
 	event.preventDefault();
