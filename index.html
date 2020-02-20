@@ -1,65 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-</head>
+		<title>Document</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css" />
+		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
+	</head>
 
-<body>
-    <nav class="navbar has-background-primary">
+	<body>
+		<nav class="navbar has-background-primary">
+			<div id="navbarExampleTransparentExample" class="navbar-menu">
+				<div class="navbar-start">
+					<a class="navbar-item" href="#">
+						Home
+					</a>
+				</div>
+			</div>
 
-        <div id="navbarExampleTransparentExample" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="#">
-                    Home
-                </a>
-
-            </div>
-        </div>
-
-        <div class="navbar-end">
-
-        </div>
-    </nav>
-    <div class="section">
-        <div class="container">
-            <div class="columns" id="topColumnSpace">
-                <div class="column is-one-fifth">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="card-header-title">
-                                Recipe Search
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <input class="input" type="text" placeholder="Text input">
-                            <button class="button is-primary mt">Primary</button>
-                        </div>
-                    </div>
+			<div class="navbar-end"></div>
+		</nav>
+		<div class="section">
+			<div class="container">
+				<div class="columns" id="topColumnSpace">
+					<div class="column is-one-fifth">
+						<div class="card">
+							<div class="card-header">
+								<div class="card-header-title">
+									Recipe Search
+								</div>
+							</div>
+							<div class="card-content">
+								<input id= "search-term" class="input" type="text" placeholder="Text input" />
+								<button id= "search-button" class="button is-primary mt">Primary</button>
+							</div>
+						</div>
+					</div>
+					<div class="column is-four-fifths">
+						<div id="recipe-container">
+							<div class="card">
+								<div class="card-header">
+									<div class="card-header-title title">
+										Recipe 1
+									</div>
+								</div>
+								<div class="card-content">
+									Recipe stuff
+								</div>
+							</div>
+						</div>
+					</div>
                 </div>
-                <div class="column is-four-fifths">
-                    <div id="recipe-container">
-                        <div class="card">
-                            <div class="card-header">
-                                <div class="card-header-title title">
-                                    Recipe 1
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                Recipe stuff
-                            </div>
-                        </div>
-                    </div>
+                <div id="recipe-data">
+
                 </div>
-            </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
+
+                <div id="recipe-videos">
+
+                </div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
 </html>
