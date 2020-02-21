@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,7 @@
 
         <div id="navbarExampleTransparentExample" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item" href="#">
+                <a class="navbar-item is-size-1" href="#">
                     Home
                 </a>
 
@@ -30,35 +31,34 @@
         <div class="container">
             <div class="columns" id="topColumnSpace">
                 <div class="column is-one-fifth">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="card-header-title">
+                    <div class="card rounded">
+                        <div class="card-header top-rounded has-background-link">
+                            <div class="card-header-title has-text-white">
                                 Recipe Search
                             </div>
                         </div>
                         <div class="card-content">
-                            <input class="input" type="text" placeholder="Text input">
-                            <button class="button is-primary mt">Primary</button>
+                            <input class="input" type="text" placeholder="Text input" id="search-term">
+                            <button class="button is-primary mt" id="search-button">Primary</button>
                         </div>
                     </div>
                 </div>
                 <div class="column is-four-fifths">
-                    <div id="recipe-container">
-                        <div class="card">
-                            <div class="card-header">
-                                <div class="card-header-title title">
-                                    Recipe 1
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                Recipe stuff
-                            </div>
-                        </div>
+                    <div id="card-list">
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <script src="script.js"></script>
+    <div class="modal level" id="videoModal">
+        <div class="modal-background"></div>
+        <button class="modal-close is-large" aria-label="close" id="closeModal">x</button>
+        <div class="modal-content level-item">
+            <iframe width='560' height='315' frameborder='0'
+             allowfullscreen id="videoIframe">
+        </div>
+    </div>
 </body>
+
 </html>
