@@ -36,7 +36,7 @@ $('#search-button').on('click', function (event) {
 //function to make ajax call to youTube
 function youtubeCall(searchValue) {
 	let youTubeURL =
-		'https://www.googleapis.com/youtube/v3/search?key=AIzaSyDaGc43zILOouEaCCzwTmXlqra_P5q5MmQ&part=snippet&q=' +
+		'https://www.googleapis.com/youtube/v3/search?key=AIzaSyDBtwVpRnmyR4QnIWR8eQSt2OL6zptVpI0&part=snippet&q=' +
 		searchValue;
 	return $.ajax({
 		url: youTubeURL,
@@ -58,7 +58,7 @@ function printCards(recipeUrl, recipeLabel, recipeImage, currentCard) {
 				),
 				$("<button>").attr({ class: "button is-primary mt", id: currentCard + "btn" }).text("Related Video")
 			)
-		)
+		).hide().fadeIn("slow")
 	)
 }
 
